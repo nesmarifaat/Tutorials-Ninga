@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Check Positive Scenarios">
+    <parameter name="browser" value=""/>
+    <test name="Check Login With Valid Data">
+      <classes>
+          <class name="testcases.TC01_Login">
+              <methods>
+                  <include name="checkLogin_P"/>
+              </methods>
+          </class>
+      </classes>
+    </test>
+
+    <test name="E2E purchase Flow">
+        <classes>
+            <class name="testcases.TC02_E2E_Purchase_Product">
+                <methods>
+                    <include name="e2eFlow_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
